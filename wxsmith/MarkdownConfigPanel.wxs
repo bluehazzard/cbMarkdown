@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxPanel" name="MarkdownConfigPanel">
+		<id_arg>0</id_arg>
+		<object class="wxGridBagSizer" variable="GridBagSizer1" member="no">
+			<growablecols>0</growablecols>
+			<growablerows>1</growablerows>
+			<object class="sizeritem">
+				<object class="wxBoxSizer" variable="BoxSizer2" member="no">
+					<object class="sizeritem">
+						<object class="wxRadioBox" name="ID_RADIOBOX1" variable="m_radRender" member="yes">
+							<label>Render technology</label>
+							<content>
+								<item>Html View (no CSS)</item>
+								<item>Web view</item>
+							</content>
+							<default>-1</default>
+						</object>
+						<flag>wxALL|wxALIGN_TOP</flag>
+						<border>5</border>
+					</object>
+					<object class="sizeritem">
+						<object class="wxGridBagSizer" variable="GridBagSizer2" member="no">
+							<growablecols>0</growablecols>
+							<growablerows>0</growablerows>
+							<object class="sizeritem">
+								<object class="wxStaticText" name="ID_STATICTEXT1" variable="StaticText1" member="yes">
+									<label>File extensions (; seperated list)</label>
+								</object>
+								<col>0</col>
+								<row>0</row>
+								<flag>wxALL|wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL</flag>
+								<border>2</border>
+								<option>1</option>
+							</object>
+							<object class="sizeritem">
+								<object class="wxTextCtrl" name="ID_TEXTCTRL2" variable="m_extensions" member="yes">
+									<value>md;</value>
+								</object>
+								<col>0</col>
+								<row>1</row>
+								<flag>wxALL|wxEXPAND</flag>
+								<border>2</border>
+								<option>1</option>
+							</object>
+						</object>
+						<flag>wxALL|wxALIGN_TOP</flag>
+						<border>5</border>
+						<option>1</option>
+					</object>
+				</object>
+				<col>0</col>
+				<row>0</row>
+				<flag>wxALL|wxEXPAND</flag>
+				<border>5</border>
+			</object>
+			<object class="sizeritem">
+				<object class="wxGridBagSizer" variable="GridBagSizer3" member="no">
+					<growablecols>0</growablecols>
+					<growablerows>1</growablerows>
+					<object class="sizeritem">
+						<object class="wxStaticText" name="ID_STATICTEXT2" variable="StaticText2" member="yes">
+							<label>CSS used for Web view:</label>
+						</object>
+						<col>0</col>
+						<row>0</row>
+						<flag>wxALL|wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL</flag>
+						<border>2</border>
+						<option>1</option>
+					</object>
+					<object class="sizeritem">
+						<object class="wxButton" name="ID_BUTTON1" variable="m_ResetCSS" member="yes">
+							<label>Reset CSS</label>
+							<handler function="OnResetCSSClick" entry="EVT_BUTTON" />
+						</object>
+						<col>1</col>
+						<row>0</row>
+						<flag>wxALL|wxALIGN_RIGHT|wxALIGN_CENTER_VERTICAL</flag>
+						<option>1</option>
+					</object>
+					<object class="sizeritem">
+						<object class="wxTextCtrl" name="ID_TEXTCTRL1" variable="m_txtCSS" member="yes">
+							<size>428,182</size>
+						</object>
+						<colspan>2</colspan>
+						<col>0</col>
+						<row>1</row>
+						<flag>wxALL|wxEXPAND</flag>
+						<border>5</border>
+						<option>1</option>
+					</object>
+				</object>
+				<col>0</col>
+				<row>1</row>
+				<flag>wxEXPAND</flag>
+				<border>5</border>
+				<option>1</option>
+			</object>
+		</object>
+	</object>
+</wxsmith>
