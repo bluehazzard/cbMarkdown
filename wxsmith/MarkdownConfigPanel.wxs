@@ -29,7 +29,7 @@
 								</object>
 								<col>0</col>
 								<row>0</row>
-								<flag>wxALL|wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL</flag>
+								<flag>wxALL|wxALIGN_LEFT</flag>
 								<border>2</border>
 								<option>1</option>
 							</object>
@@ -64,7 +64,7 @@
 						</object>
 						<col>0</col>
 						<row>0</row>
-						<flag>wxALL|wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL</flag>
+						<flag>wxALL|wxALIGN_LEFT</flag>
 						<border>2</border>
 						<option>1</option>
 					</object>
@@ -75,12 +75,13 @@
 						</object>
 						<col>1</col>
 						<row>0</row>
-						<flag>wxALL|wxALIGN_RIGHT|wxALIGN_CENTER_VERTICAL</flag>
+						<flag>wxALL|wxALIGN_RIGHT</flag>
 						<option>1</option>
 					</object>
 					<object class="sizeritem">
 						<object class="wxTextCtrl" name="ID_TEXTCTRL1" variable="m_txtCSS" member="yes">
 							<size>428,182</size>
+							<style>wxTE_MULTILINE</style>
 						</object>
 						<colspan>2</colspan>
 						<col>0</col>

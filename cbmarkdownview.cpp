@@ -82,12 +82,12 @@ void cbMarkdownView::SetupWindow(eRenderView window)
     if(window == HTML_VIEW) // Html View
     {
         hmtlWindow = new cbMarkdownHTMLWindow(this,wxID_ANY, wxPoint(0,0), this->GetSize(),wxHW_SCROLLBAR_AUTO);
-        m_sizer->Add(hmtlWindow, 1, wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
+        m_sizer->Add(hmtlWindow, 1, wxEXPAND, 5);
     }
     else if(window == WEB_VIEW) // Web view
     {
         WebViewHmtlWindow = wxWebView::New(this, wxID_ANY, "", wxPoint(0, 0), this->GetSize());
-        m_sizer->Add(WebViewHmtlWindow, 1, wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
+        m_sizer->Add(WebViewHmtlWindow, 1, wxEXPAND, 5);
 
         WebViewHmtlWindow->Bind(wxEVT_WEBVIEW_NAVIGATING, &cbMarkdownView::OnWebViewNavigate, this );
         WebViewHmtlWindow->RegisterHandler(wxSharedPtr<wxWebViewHandler>(new wxWebViewFSHandler("memory")));

@@ -43,7 +43,7 @@ MarkdownConfigPanel::MarkdownConfigPanel(wxWindow* parent, cbMarkdownView* view)
 	BoxSizer2->Add(m_radRender, 0, wxALL|wxALIGN_TOP, 5);
 	GridBagSizer2 = new wxGridBagSizer(0, 0);
 	StaticText1 = new wxStaticText(this, ID_STATICTEXT1, _("File extensions (; seperated list)"), wxDefaultPosition, wxDefaultSize, 0, _T("ID_STATICTEXT1"));
-	GridBagSizer2->Add(StaticText1, wxGBPosition(0, 0), wxDefaultSpan, wxALL|wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL, 2);
+	GridBagSizer2->Add(StaticText1, wxGBPosition(0, 0), wxDefaultSpan, wxALL|wxALIGN_LEFT, 2);
 	m_extensions = new wxTextCtrl(this, ID_TEXTCTRL2, _("md;"), wxDefaultPosition, wxDefaultSize, 0, wxDefaultValidator, _T("ID_TEXTCTRL2"));
 	GridBagSizer2->Add(m_extensions, wxGBPosition(1, 0), wxDefaultSpan, wxALL|wxEXPAND, 2);
 	GridBagSizer2->AddGrowableCol(0);
@@ -52,9 +52,9 @@ MarkdownConfigPanel::MarkdownConfigPanel(wxWindow* parent, cbMarkdownView* view)
 	GridBagSizer1->Add(BoxSizer2, wxGBPosition(0, 0), wxDefaultSpan, wxALL|wxEXPAND, 5);
 	GridBagSizer3 = new wxGridBagSizer(0, 0);
 	StaticText2 = new wxStaticText(this, ID_STATICTEXT2, _("CSS used for Web view:"), wxDefaultPosition, wxDefaultSize, 0, _T("ID_STATICTEXT2"));
-	GridBagSizer3->Add(StaticText2, wxGBPosition(0, 0), wxDefaultSpan, wxALL|wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL, 2);
+	GridBagSizer3->Add(StaticText2, wxGBPosition(0, 0), wxDefaultSpan, wxALL|wxALIGN_LEFT, 2);
 	m_ResetCSS = new wxButton(this, ID_BUTTON1, _("Reset CSS"), wxDefaultPosition, wxDefaultSize, 0, wxDefaultValidator, _T("ID_BUTTON1"));
-	GridBagSizer3->Add(m_ResetCSS, wxGBPosition(0, 1), wxDefaultSpan, wxALL|wxALIGN_RIGHT|wxALIGN_CENTER_VERTICAL, 0);
+	GridBagSizer3->Add(m_ResetCSS, wxGBPosition(0, 1), wxDefaultSpan, wxALL|wxALIGN_RIGHT, 0);
 	m_txtCSS = new wxTextCtrl(this, ID_TEXTCTRL1, wxEmptyString, wxDefaultPosition, wxSize(428,182), wxTE_MULTILINE, wxDefaultValidator, _T("ID_TEXTCTRL1"));
 	GridBagSizer3->Add(m_txtCSS, wxGBPosition(1, 0), wxGBSpan(1, 2), wxALL|wxEXPAND, 5);
 	GridBagSizer3->AddGrowableCol(0);
